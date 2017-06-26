@@ -1,0 +1,1 @@
+The Ubuntu font is distributed under the [Ubuntu Font License version 1.0](http://font.ubuntu.com/ufl/ubuntu-font-licence-1.0.txt).
