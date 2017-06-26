@@ -122,6 +122,16 @@ the stamping of each page with a header, a footer, and a page counter.
 One option, if you plan to run this application as a Windows service, is [NSSM](https://nssm.cc/). Check [this
 post](http://giordanomaestro.blogspot.bg/2013/01/running-java-applications-as-windows.html) out for some tips.
 
+## Security
+
+The HTTP server that is launched by the application does not implement any kind of authentication or
+authorization scheme. As a basic precaution, you should add an IP whitelist rule to your firewall software to prevent
+unauthorized access.
+
+This application does not verify or sanitize the input data it receives (HTML, CSS, and PDF data), and the
+author does not guarantee these inputs cannot be used as attack vectors to breach the server this application
+runs on.
+
 ## Licensing Concerns
 
 The following legal aspects of using this application are the opinion of the author of this application. 
@@ -148,3 +158,8 @@ application's licensing and distribution restrictions.
 
 When using custom fonts, parts of those fonts will be embedded in the generated PDF. Confirm with each font's
 license that that is permitted.
+
+## Disclaimer
+
+Per the Apache 2.0 License, the author shall not be held liable for any damages incurred while using this
+application. Use at your own risk.
