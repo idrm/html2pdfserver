@@ -17,7 +17,7 @@ Java 8 or above
 
 ## Usage
 
-Run `java -Dserver.por=8199 -jar html2pdfserver-0.0.1.jar --fontDirectory=/my/fonts` to start the app up.
+Run `java -Dserver.por=8199 -jar html2pdfserver-0.0.2.jar --fontDirectory=/my/fonts` to start the app up.
 
 `8199` is the HTTP port the application will run on, and `/my/fonts` is the directory
 where custom fonts are located. You can skip the `--fontDirectory` option if you do not
@@ -25,8 +25,8 @@ plan to use custom fonts.
 
 The command should be run from the directory where the application's `jar` file is located.
 
-Alternately, you can prepend `html2pdfserver-0.0.1.jar` in the command with the directory 
-where the `jar` file is located, e.g. `/some/directory/html2pdfserver-0.0.1.jar`.
+Alternately, you can prepend `html2pdfserver-0.0.2.jar` in the command with the directory 
+where the `jar` file is located, e.g. `/some/directory/html2pdfserver-0.0.2.jar`.
 
 Once the application has started up you can load `http://localhost:8199/registered-fonts` 
 in a web browser to see a list of the fonts that you can use. This will include the standard PDF fonts together with
@@ -104,7 +104,7 @@ To see the converter in action follow these steps:
 * open a terminal / command line prompt window (note that you may have issues with the Windows PowerShell, so you should
 try with `cmd.exe` instead)
 * `cd` into the `sample` directory of the source
-* run `java -Dserver.port=8199 -jar ..\dist\html2pdfserver-0.0.1.jar --fontDirectory=.`
+* run `java -Dserver.port=8199 -jar ..\dist\html2pdfserver-0.0.2.jar --fontDirectory=.`
 This should start the HTTP server up.
 * open a new terminal / command line prompt window
 * `cd` into the `sample` directory of the the source
@@ -143,7 +143,7 @@ to consult one on your own if you want to get a valid legal opinion.
 
 The code of this application is released under the Apache 2.0 license. 
 
-At the same time, it has a compile-time dependency on the iTextPDF (version 5) library. iTextPDF is used 
+At the same time, it has a compile-time dependency on the [iTextPDF](http://itextpdf.com) (version 5) library. iTextPDF is used 
 under the Affero GPL license, which requires that this application and any derivatives of it are also 
 released as open source. 
 

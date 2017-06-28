@@ -72,8 +72,6 @@ public class Html2PdfController {
 			ResponseEntity<InputStreamResource> response = new ResponseEntity<>(new InputStreamResource(new ByteArrayInputStream(pdfBytes)), headers, HttpStatus.OK);
 			return response;
 		} catch (Exception ex) {
-			log.error(ex.getMessage());
-			ex.printStackTrace();
 			headers.setContentType(MediaType.parseMediaType("text/plain; charset=UTF-8"));
 			ResponseEntity<InputStreamResource> response = new ResponseEntity<>(new InputStreamResource(new ByteArrayInputStream(ex.getMessage().getBytes())), headers, HttpStatus.INTERNAL_SERVER_ERROR);
 			return response;

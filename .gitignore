@@ -21,6 +21,6 @@
 nbproject/private/
 build/
 nbbuild/
-# dist/
+# dist/ -- ignore disabled to accommodate the .jar including dist directory
 nbdist/
 .nb-gradle/
